@@ -18,8 +18,6 @@ export async function authRoutes(app: FastifyInstance) {
 
     const { code } = bodySchema.parse(request.body)
 
-    console.log('bbb', code)
-
     /* 
       o axios faz uma chamada na api do github e envia os parametros necessarios
       p/ completar a requisicao
